@@ -17,6 +17,8 @@ body {
     position: absolute;
     border: solid 2px #FFFFFF;
     transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .big-card {
@@ -29,34 +31,55 @@ body {
     width: 5vmin;
     height: 8vmin;
     border-radius: 1vmin;
+    display:inline;
 }
 
 
 /* =====================
-   ===== BIG CARDS =====
+   ======= CARDS =======
    ===================== */
 
+/* big cards */
 .big-card:nth-child(1) {
     z-index: +3;
+    background-image: url('./assets/picture/Shetland\ Duck.jpg');
 }
 
 .big-card:nth-child(2) {
     transform: translateX(-3%) rotate(-3deg);
     z-index: +2;
+    background-image: url('./assets/picture/1-female-mallard-duck-j-mccombie.jpg');
 }
 
 .big-card:nth-child(3) {
     transform: translateX(-5%) rotate(-6deg);
+    background-image: url('./assets/picture/5da08feb89b56_ovBHh7o__700.jpg');
 }
 
 .big-card:nth-child(4) {
     transform: translateX(-8%) rotate(-9deg);
     z-index: -1;
+    background-image: url('./assets/picture/a358b84c387154105b6ff9644508f51d--raising-ducks-cute-ducklings.jpg');
 }
 
-/* .tiny-card:nth-child(1) {
-    background-color: purple;
-} */
+/* tiny cards */
+.tiny-card:nth-child(5) {
+    background-image: url('./assets/picture/1000_F_199783168_yBZdDwJbUOnAi8UXAEZEQs2RMAOAjwvX.jpg');
+}
+
+.tiny-card:nth-child(6) {
+    background-image: url('./assets/picture/2300.jpg');
+}
+
+.tiny-card:nth-child(7) {
+    z-index: +2;
+    background-image: url('./assets/picture/parade-nuptiale-du-tadorne-de-belon.jpg');
+}
+
+.tiny-card:nth-child(8) {
+    z-index: +2;
+    background-image: url('./assets/picture/Happy-ducks-5767.jpg');
+}
 
 
 /* =====================
@@ -65,13 +88,11 @@ body {
 
 /* big cards */
 .cards-container:hover > .big-card:nth-child(1) {
-    background: red;
     transform: translateX(90%) rotate(30deg) translateY(23%);
 }
 
 .cards-container:hover > .big-card:nth-child(2) {
     transform: translateX(20%) rotate(12deg) translateY(3%);
-    background-color: green;
 }
 
 .cards-container:hover > .big-card:nth-child(3) {
@@ -83,13 +104,11 @@ body {
 }
 
 /* tiny cards */
-
 .cards-container:hover > .tiny-card:nth-child(5) {
     transform: translate(410%, -110%) rotate(-18deg);
 }
 
 .cards-container:hover > .tiny-card:nth-child(6) {
-    background-color: purple;
     transform: translate(290%, 310%) rotate(13deg);
 }
 
