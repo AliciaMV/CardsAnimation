@@ -32,6 +32,10 @@ body {
 }
 
 
+/* =====================
+   ===== BIG CARDS =====
+   ===================== */
+
 .big-card:nth-child(1) {
     z-index: +3;
 }
@@ -50,7 +54,16 @@ body {
     z-index: -1;
 }
 
+/* .tiny-card:nth-child(1) {
+    background-color: purple;
+} */
 
+
+/* =====================
+   ======= HOVER =======
+   ===================== */
+
+/* big cards */
 .cards-container:hover > .big-card:nth-child(1) {
     background: red;
     transform: translateX(90%) rotate(30deg) translateY(23%);
@@ -67,4 +80,23 @@ body {
 
 .cards-container:hover > .big-card:nth-child(4) {
     transform: translateX(-100%) rotate(-25deg) translateY(8%);
+}
+
+/* tiny cards */
+
+.cards-container:hover > .tiny-card:nth-child(5) {
+    transform: translate(410%, -110%) rotate(-18deg);
+}
+
+.cards-container:hover > .tiny-card:nth-child(6) {
+    background-color: purple;
+    transform: translate(290%, 310%) rotate(13deg);
+}
+
+.cards-container:hover > .tiny-card:nth-child(7) {
+    transform: translate(-390%, -180%) rotate(10deg);
+}
+
+.cards-container:hover > .tiny-card:nth-child(8) {
+    transform: translate(-410%, 240%) rotate(-13deg);
 }
