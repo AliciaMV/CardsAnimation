@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.cards-container {
+    
+}
+
+.cards {
+    aspect-ratio: 5 / 7;
+}
+
+.big-card {
+    margin: 0 auto;
+    width: 14em;
+    height: 20em;
+}
+
+.tiny-card {
+    margin: 0 auto;
+    width: 7em;
+    height: 10em;
+}
+
+
