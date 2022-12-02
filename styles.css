@@ -4,23 +4,31 @@ body {
 }
 
 .cards-container {
-    
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cards {
+.card {
     aspect-ratio: 5 / 7;
+    position: absolute;
+    border: solid 2px #FFFFFF;
 }
 
 .big-card {
     margin: 0 auto;
-    width: 14em;
-    height: 20em;
+    width: 20vmin;
+    height: 30vmin;
+    border-radius: 1.5vmin;
 }
 
 .tiny-card {
     margin: 0 auto;
-    width: 7em;
-    height: 10em;
+    width: 5vmin;
+    height: 8vmin;
+    border-radius: 1vmin;
 }
 
 
