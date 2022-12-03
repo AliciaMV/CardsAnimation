@@ -7,7 +7,10 @@ body {
     align-items: center;
 }
 
-
+.card-swiper {
+    /* display: flex;
+    flex-direction: column; */
+}
 
 .cards-groups,
 .cards-container,
@@ -134,4 +137,30 @@ body {
 
 .cards-container:hover > .tiny-card:nth-child(8) {
     transform: translate(-410%, 240%) rotate(-13deg);
+}
+
+
+/* =====================
+   ====== BUTTONS ======
+   ===================== */
+
+.card-swiper-buttons {
+    margin-top: 35vmin;
+    margin-left: 4vmin;
+}
+
+.button {
+    margin: 1vmin;
+    width: 4vmin;
+    height: 4vmin;
+    border-radius: 25px;
+    border: solid 2px #FFFFFF;
+}
+
+.button-like {
+
+}
+
+.button-dislike {
+
 }
