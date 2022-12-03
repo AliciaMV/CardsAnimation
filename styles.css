@@ -24,15 +24,10 @@ body {
 .big-card {
     width: 20vmin;
     height: 30vmin;
-
 } 
 
-.cards-container {
-    /* margin: 25% 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    
+.cards-container[data-status="unknown"] {
+    transform: scale(0);
 }
 
 .card {
@@ -124,19 +119,22 @@ body {
 
 /* tiny cards */
 .cards-container:hover > .tiny-card:nth-child(5) {
-    transform: translate(410%, -110%) rotate(-18deg);
+    /* transform: translate(410%, -110%) rotate(-18deg); */
+    transform: translate(490%, 10%) rotate(-18deg);
 }
 
 .cards-container:hover > .tiny-card:nth-child(6) {
-    transform: translate(290%, 310%) rotate(13deg);
+    transform: translate(380%, 440%) rotate(13deg);
 }
 
 .cards-container:hover > .tiny-card:nth-child(7) {
-    transform: translate(-390%, -180%) rotate(10deg);
+    /* transform: translate(-390%, -180%) rotate(10deg); */
+    transform: translate(-160%, -50%) rotate(10deg);
 }
 
 .cards-container:hover > .tiny-card:nth-child(8) {
-    transform: translate(-410%, 240%) rotate(-13deg);
+    /* transform: translate(-410%, 240%) rotate(-13deg); */
+    transform: translate(-330%, 350%) rotate(-13deg);
 }
 
 
@@ -155,6 +153,18 @@ body {
     height: 4vmin;
     border-radius: 25px;
     border: solid 2px #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 1.8vmin;
+    cursor: pointer;
+}
+
+#like-button:hover {
+    color: #5dc8fc; 
+}
+
+#dislike-button:hover {
+    color: #d40000;
 }
 
 .button-like {
