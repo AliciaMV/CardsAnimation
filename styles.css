@@ -26,8 +26,17 @@ body {
     height: 30vmin;
 } 
 
+.cards-container {
+    transition: transform 700ms ease;
+}
+
+/* card group swiping animation */
 .cards-container[data-status="unknown"] {
     transform: scale(0);
+}
+
+.cards-container[data-status="after"] {
+    transform: translateX(-80%) translateY(40%) scale(0);
 }
 
 .card {
